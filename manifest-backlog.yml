@@ -4,9 +4,9 @@ applications:
   instances: 1
   memory: 256M
   routes:
-  - route: backlog-pal-microservice.apps.pikes.pal.pivotal.io
+  - route: backlog-pal-microservice.cfapps.io
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-microservice.apps.pikes.pal.pivotal.io/
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-microservice.cfapps.io/
   services:
   - tracker-backlog-database
